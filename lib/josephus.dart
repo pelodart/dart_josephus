@@ -1,5 +1,5 @@
 class Josephus {
-  static const int DefaultSoldiers = 17;  // 41
+  static const int DefaultSoldiers = 12;  // 41
   static const int DefaultDecimatio = 3;
 
   List<bool> _soldiers; // array of soldiers

@@ -57,3 +57,8 @@ void main() {
 Wie lautet nun die Antwort des Josephus-Problems in seiner historisch überlieferten Version? Es handelt sich dabei – einschließlich Josephus – um 41 Soldaten und es wird jeweils jeder dritte Soldat getötet.
 
 *Hinweis*: Damit Sie Ihre Lösung auf Korrektheit überprüfen können: Der Legende nach stellte Josephus sich an die 16. Stelle und blieb damit als Vorletzter übrig. Er konnte auf diese Weise den letzten, schwächeren Mann an der 31. Position überwältigen. Beide ergaben sich den Römern und konnten auf diese Weise ihr Leben retten.
+
+*Hinweis*: Zur Lösung des Problems bieten sich bzgl. des Einsatzes von Datenstrukturen mehrere Möglichkeiten an: Zum Beispiel der Aufbau einer einfach verketteten Liste, in der jeder Knoten einen Soldaten der Rebellenbande darstellt. Oder aber ein dynamisch allokiertes Array vom Typ *bool*, das pro Rebell einen Eintrag besitzt. Die Realisierung in diesem Repository fußt auf einem Array. In einem Array vom Typ *bool* können Sie mit den beiden Werten **true** und **false** hinterlegen, ob der *i*.-te Soldat während des Auszählens noch am Leben ist oder nicht. Das Auszählen selbst erfolgt durch geschicktes Traversieren des Arrays, wobei Sie im Wesentlichen nur darauf achten müssen, keine Zugriffsverletzung mit einem unzulässigen Index zu erzeugen. Zur Illustration finden Sie in Abbildung 1 ein Beispiel mit 12 Soldaten vor. Am Ende bleiben in dem Feld zwei Einträge mit einem **true**-Wert übrig, es handelt sich um die Soldaten 3 und 8:
+
+<img src="assets/JosephusArray.png" width="600">
+Abbildung 1: Beispiel des Josephus-Problems mit 12 Rebellen und Auszählabstand 3.
