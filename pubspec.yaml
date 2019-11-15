@@ -1,0 +1,9 @@
+name: josephus
+version: 1.0.1
+description: >-
+  On the deadly ancient Josephus problem from a Dart programmer's perspective and maybe you'll be the lone survivor.
+author: Peter Loos <peter.loos@gmx.de>
+homepage: http://peterloos.de
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+dependencies:
